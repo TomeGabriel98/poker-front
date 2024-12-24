@@ -1,0 +1,101 @@
+.page-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.open-modal-btn {
+  padding: 10px 20px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #ff5c5c;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.twitter-btn,
+.patreon-btn {
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.twitter-btn {
+  background-color: #1da1f2;
+}
+
+.patreon-btn {
+  background-color: #ff424d;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spectate-btn,
+.play-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.spectate-btn {
+  background-color: #eaeaea;
+  color: #333;
+}
+
+.play-btn {
+  background-color: #ff5c5c;
+  color: white;
+}

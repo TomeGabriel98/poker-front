@@ -1,0 +1,134 @@
+.poker-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  background-color: #f4f4f4;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 10px;
+}
+
+.menu-button {
+  background-color: rgb(222, 222, 222);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(154, 154, 154);
+  border-radius: 5px;
+}
+
+.table {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.table-center {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  transform: translate(-50%);
+  text-align: center;
+  z-index: 0;
+  background: #333;
+  border: 10px solid rgb(196, 196, 196);
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ablablue {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.pot-display {
+  text-align: left;
+  margin-bottom: 0px;
+  position: relative;
+  cursor: pointer;
+  background: rgb(80, 158, 188);
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 300ms ease-in-out;
+  opacity: 1;
+  z-index: -1;
+  transform: rotateX(0deg);
+  box-sizing: border-box;
+}
+
+.table-cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.empty-card {
+  width: 50px;
+  height: 75px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.player-area, .opponent-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-hand, .opponent-hand {
+  display: flex;
+  gap: 5px;
+}
+
+.card-back {
+  width: 50px;
+  height: 75px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.game-interactions {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.player-actions {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.action-button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.action-button:hover {
+  background-color: #007fff;
+}
