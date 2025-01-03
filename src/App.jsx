@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import RoomList from "./components/legacy/RoomList";
 import GameBoard from "./components/GameBoard";
-import JoinRoom from "./components/JoinRoom";
 import ListRoom from "./components/ListRoom";
 
 const App = () => {
   const [roomId, setRoomId] = useState(null);
+  const [playerId, setPlayerId] = useState(null);
+
+  const closeGameBoard = () => {
+    setRoomId(null)
+  }
 
   return (
     <div>
       {roomId ? (
-        <GameBoard />
+        <GameBoard roomId={roomId} playerId={playerId} onCloseGame={closeGameBoard}/>
       ) : (
-        <ListRoom onJoinRoom={setRoomId} />
+        <ListRoom getRoom={setRoomId} getPlayer={setPlayerId} />
       )}
     </div>
   );

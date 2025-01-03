@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/Card.css";
 
-const Card = ({ suit, value }) => {
+const Card = ({ card }) => {
   return (
-    <div className="card">
-      <img src={`/assets/cards/${value}_of_${suit}.svg`} alt={`${value} of ${suit}`} />
+    <div className={`card ${!card ? "empty" : ""}`}>
+      {card? (
+        <img src={`/assets/cards/${card}.svg`} alt={`${card} svg`} />
+      ) : (
+        <span />
+      )}
     </div>
   );
 };
