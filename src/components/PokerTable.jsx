@@ -1,4 +1,5 @@
 import Card from "./Card"
+import "../styles/PokerTable.css"
 
 const PokerTable = ({ pot, communityCards }) => {
   return (

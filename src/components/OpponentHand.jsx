@@ -1,4 +1,5 @@
 import Card from "./Card"
+import "../styles/OpponentHand.css"
 
 const OpponentHand = () => {
   return (

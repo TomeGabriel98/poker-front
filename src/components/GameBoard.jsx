@@ -123,7 +123,7 @@ const GameBoard = ({ roomId, playerId, onCloseGame }) => {
       {activeGame ? (
         <div className="footer">
           <button className="footer-button raise" onClick={openAmountModal} disabled={!isPlayerTurn}>RAISE TO</button>
-          <button className="footer-button call" onClick={callBet} disabled={!isPlayerTurn}>CALL $0.05</button>
+          <button className="footer-button call" onClick={callBet} disabled={!isPlayerTurn}>CALL</button>
           <button className="footer-button fold" onClick={foldHand} disabled={!isPlayerTurn}>FOLD</button>
         </div>
       ) : (

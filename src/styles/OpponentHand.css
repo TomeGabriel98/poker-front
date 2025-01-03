@@ -1,0 +1,29 @@
+.opponent-hand {
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  z-index: 0;
+  background: #333;
+  border: 2px dashed white;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.opponent-hand .card {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.opponent-hand .card:nth-child(2) {
+  left: 60%;
+}
+
+.opponent-hand .card:nth-child(1) {
+  left: 40%;
+}
