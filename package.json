@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^8.0.100",
+    "@testing-library/jest-dom": "^6.6.3",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
-    "socket.io-client": "^4.8.1",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
